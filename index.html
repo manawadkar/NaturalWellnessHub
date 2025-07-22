@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Natural Healing Hub</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f9f8;
+      color: #333;
+    }
+    header {
+      background: #4CAF50;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+    nav {
+      background: #388E3C;
+      padding: 0.5em;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1em;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2em;
+    }
+    .service {
+      border: 1px solid #ddd;
+      padding: 1em;
+      margin-bottom: 1em;
+      background: #fff;
+      border-radius: 8px;
+    }
+    footer {
+      background: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 1em;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+    button {
+      background-color: #388E3C;
+      color: white;
+      padding: 0.5em 1em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Natural Healing Hub</h1>
+    <p>Your gateway to wellness and natural therapies</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h2>Welcome to Natural Healing Hub</h2>
+    <p>We provide holistic therapies, organic products, and natural remedies to help you live a healthier life.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="service">
+      <h3>Aromatherapy</h3>
+      <p>Relax and rejuvenate with our essential oil treatments.</p>
+    </div>
+    <div class="service">
+      <h3>Yoga Classes</h3>
+      <p>Join our expert-led yoga sessions for all levels.</p>
+    </div>
+    <div class="service">
+      <h3>Herbal Consultation</h3>
+      <p>Get personalized herbal guidance for your wellness goals.</p>
+    </div>
+    <button onclick="loadMore()">Load More Services</button>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: support@naturalhealinghub.com</p>
+    <p>Phone: +1-234-567-890</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Natural Healing Hub. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function loadMore() {
+      const section = document.getElementById('services');
+      const newService = document.createElement('div');
+      newService.classList.add('service');
+      newService.innerHTML = `
+        <h3>Meditation Retreats</h3>
+        <p>Experience tranquility and mindfulness with our guided retreats.</p>
+      `;
+      section.insertBefore(newService, section.querySelector('button'));
+    }
+  </script>
+</body>
+</html>
